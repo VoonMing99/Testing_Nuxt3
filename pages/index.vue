@@ -29,6 +29,10 @@ function increment(){
   count.value++
 }
 
+const increase = (()=>{
+  count.value++
+})
+
 function removeCar(item){
     items.value = items.value.filter((t)=> t !== item)
 }
@@ -39,7 +43,7 @@ const double = computed(() => count.value * 2)
 <template>
   <div>
     <h2>Hello There! Click the <b>Green</b> button below!</h2>
-    <button @click="increment" class="countButton">{{ count }}</button>
+    <button @click="increase" class="countButton">{{ count }}</button>
     <span>:</span>
     <span class="notButton">{{ double }}</span>
     <h2 class="overline">Array below is looping out the object data</h2>
