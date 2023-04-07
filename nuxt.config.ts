@@ -14,5 +14,10 @@ export default defineNuxtConfig({
 
   modules:[
         '@nuxtjs/tailwindcss'
-    ]
+  ],
+  
+  runtimeConfig: {
+    currenciesKey: process.env.CURRENCIES_API_KEY
+  }
+
 })
