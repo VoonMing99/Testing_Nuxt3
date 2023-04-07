@@ -1,5 +1,4 @@
 <script setup>
-import mousetrack from './components/mousetrack.vue'
 </script>
 
 <template>

@@ -1,11 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    runtimeConfig: {
-        // The private keys which are only available server-side
-        apiSecret: '123',
-        // Keys within public are also exposed client-side
-        public: {
-          apiBase: '/api'
-        }
-      }
+  app:{
+    head:{
+      title: 'Nuxt Testing',
+      meta: [
+        { name: 'description', content: 'Nuxt3 Tutorial'}
+      ],
+      link: [
+        { rel:'stylesheet', href:'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined' }
+      ]
+    }
+  },
+
+  modules:[
+        '@nuxtjs/tailwindcss'
+    ]
 })
